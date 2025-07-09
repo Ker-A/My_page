@@ -1,42 +1,40 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-import AbotuMe from '../components/AbotuMe.astro';
-import Tecnologies from '../components/Tecnologies.astro';
-import Proyects from '../components/Proyects.astro';
-import Footer from '../components/Footer.astro';
+import Welcome from "../components/Welcome.astro";
+import Layout from "../layouts/Layout.astro";
+import AbotuMe from "../components/AbotuMe.astro";
+import Tecnologies from "../components/Tecnologies.astro";
+import Proyects from "../components/Proyects.astro";
+import Footer from "../components/Footer.astro";
 // Import global styles and fonts
 import "../styles/global.css";
-import '@fontsource/belleza';
-import '@fontsource/alata';
+
+import "@fontsource/alata";
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-	<header>
-		<Welcome/>
-	</header>
-	<main>
-		<section>
-			<AbotuMe/>
-		</section>
-		<section>
-			<Tecnologies/>
-		</section>
-		<section>
-			<Proyects/>
-		</section>
-	</main>
-	<footer>
-		<Footer/>
-	</footer>
+  <header>
+    <Welcome />
+  </header>
+  <main>
+    <section>
+      <AbotuMe />
+    </section>
+    <section>
+      <Tecnologies />
+    </section>
+    <section>
+      <Proyects />
+    </section>
+  </main>
+  <footer>
+    <Footer />
+  </footer>
 </Layout>
 
 <style>
-	body{
-		font-family: 'Belleza', sans-serif;
-		font-family: 'Alata', sans-serif;
-	}
+  body {
+    font-family: "Alata", sans-serif;
+  }
 </style>
-
