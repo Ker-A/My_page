@@ -3,7 +3,7 @@ import Welcome from "../components/Welcome.astro";
 import Layout from "../layouts/Layout.astro";
 import AbotuMe from "../components/AbotuMe.astro";
 import Tecnologies from "../components/Tecnologies.astro";
-import Proyects from "../components/Proyects.astro";
+import CardProyect from "../components/CardProyect.astro";
 import Footer from "../components/Footer.astro";
 // Import global styles and fonts
 import "../styles/global.css";
@@ -25,7 +25,46 @@ import "@fontsource/alata";
       <Tecnologies />
     </section>
     <section>
-      <Proyects />
+      <div class="container px-6 py-10 mx-auto sm:pt-70 md:pt-10">
+        <h2
+          class="max-w-prose text-center pb-6 text-3xl text-gray-900 font-bold sm:text-5xl dark:text-white"
+        >
+          Proyectos
+        </h2>
+
+        <!-- CARDS -->
+        <div
+          class="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 sm:grid-cols-2 lg:grid-cols-3"
+        >
+          <CardProyect
+            imagen="https://api.microlink.io/?url=https://huddle-landing-page-with-curved-sections-five-beige.vercel.app/&screenshot=true&embed=screenshot.url"
+            imagenName="Huddle Landing Page"
+            titulo="Huddle Landing Page"
+            tecnologia1="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white"
+            tecnologia2="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white"
+            tecnologia3="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"
+            link="https://huddle-landing-page-with-curved-sections-five-beige.vercel.app/"
+          />
+          <CardProyect
+            imagen="https://api.microlink.io/?url=https://fylo-landing-page-with-two-column-layout-gilt.vercel.app/&screenshot=true&embed=screenshot.url"
+            imagenName="Fylo Landing Page"
+            titulo="Fylo Landing Page"
+            tecnologia1="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white"
+            tecnologia2="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white"
+            tecnologia3="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"
+            link="https://fylo-landing-page-with-two-column-layout-gilt.vercel.app/"
+          />
+          <CardProyect
+            imagen="https://api.microlink.io/?url=https://clipboard-landing-page-eight-henna.vercel.app/&screenshot=true&embed=screenshot.url"
+            imagenName="Clipboard Landing Page"
+            titulo="Clipboard Landing Page"
+            tecnologia1="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white"
+            tecnologia2="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white"
+            tecnologia3=""
+            link="https://clipboard-landing-page-eight-henna.vercel.app/"
+          />
+        </div>
+      </div>
     </section>
   </main>
   <footer>
